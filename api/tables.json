@@ -1,8 +1,32 @@
 [
 	{
-		"customerName": "Ahmed",
-		"customerEmail": "afhaque89@gmail.com",
-		"customerID": "afhaque89",
-		"phoneNumber": "979-587-0887"
+		"customerName": "Lola",
+		"customerEmail": "lola@gmail.com",
+		"customerID": "lola2",
+		"phoneNumber": "407-369-03-08"
+	},
+	{
+		"customerName": "Matt",
+		"customerEmail": "matt@gmail.com",
+		"customerID": "matt2",
+		"phoneNumber": "407-339-0322"
+	},
+	{
+		"customerName": "Tom",
+		"customerEmail": "tom@gmail.com",
+		"customerID": "tom23",
+		"phoneNumber": "402-222-2022"
+	},
+	{
+		"customerName": "Peter",
+		"customerEmail": "peter@gmail.com",
+		"customerID": "petter2",
+		"phoneNumber": "407-339-2389"
+	},
+	{
+		"customerName": "Lee",
+		"customerEmail": "lee@gmail.com",
+		"customerID": "leeq12",
+		"phoneNumber": "402-222-2092"
 	}
 ]

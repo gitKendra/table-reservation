@@ -64,52 +64,35 @@
 
       </div>
     </div>
-    <div>
-        <a href="/"> API table link</a>
-        <a href="/">API wait list</a>
-    </div>
+    <footer class="footer">
+      <div class="container">
+            <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+      </div>
+    </footer>
   
   </div>
 
  
   <script type="text/javascript">
 
-  $("submit-btn").on ("click", function (event) {
+  $("#submit-btn").on("click", function (event) {
       event.preventDefault();
-      var table = {
-        name: $("name").val().trim(),
-        phone_number: $("number").val().trim(),
-        email: $("email").val().trim(),
-        id: $("id").val().trim()
+      var newTable = {
+        "customerName": $("#name").val().trim(),
+        "customerEmail": $("#email").val().trim(),
+        "customerID": $("#id").val().trim(),
+        "phoneNumber": $("#number").val().trim()
 
       };
 
-      $.post("/#", table)
+      $.post("/api/tables", newTable)
       .done(function (data) {
           console.log(data);
           alert("Adding your reservation")
-          
-      })
+      });
       
   });
 
-    // // Question: What does this code do?
-    // $("#add-btn").on("click", function(event) {
-    //   event.preventDefault();
-    //   var newCharacter = {
-    //     name: $("#name").val().trim(),
-    //     role: $("#role").val().trim(),
-    //     age: $("#age").val().trim(),
-    //     forcePoints: $("#force-points").val().trim()
-    //   };
-
-    //   // Question: What does this code do??
-    //   $.post("/api/new", newCharacter)
-    //   .done(function(data) {
-    //     console.log(data);
-    //     alert("Adding character...");
-    //   });
-    // });
   </script>
 
 </body>
